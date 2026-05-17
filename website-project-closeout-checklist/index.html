@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Project Closeout Checklist for Web Designers</title>
+  <meta name="description" content="Website project closeout checklist for freelance web designers: final QA, approval, payment, access, handoff packet, support boundaries, and maintenance next step.">
+  <meta property="og:title" content="Website Project Closeout Checklist">
+  <meta property="og:description" content="A practical checklist for ending web design projects cleanly instead of drifting into unpaid support.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website Project Closeout Checklist","description":"A practical website project closeout checklist for freelance web designers.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-project-closeout-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-handoff-checklist/">Checklist</a> · <a href="/handoff-harbor/website-launch-approval-form-template/">Launch approval</a> · <a href="/handoff-harbor/final-invoice-website-handoff/">Final invoice</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Closeout checklist for freelance web designers</span>
+        <h1>Website project closeout checklist</h1>
+        <p>A website project is not done when the homepage looks good. It is done when QA is complete, signoff is written, final payment is handled, access is documented, and the client knows what support is included.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_project_closeout_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Use this before you say “project complete”</h2>
+      <p>The dangerous part of a web design project is the fuzzy ending. If you launch without a closeout process, every missing login, unclear edit, DNS question, and “quick update” becomes your problem for free.</p>
+      <p>This checklist gives you a simple closeout sequence you can run before the final handoff email.</p>
+    </section>
+
+    <section>
+      <h2>The closeout sequence</h2>
+      <div class="grid">
+        <div class="card"><h3>1. Finish final QA</h3><p>Check responsive layouts, forms, links, browser basics, redirects, analytics, SEO titles, legal/footer details, and obvious content errors.</p></div>
+        <div class="card"><h3>2. Capture approval</h3><p>Get written signoff that the client reviewed the site and accepts known launch notes before final launch or final payment.</p></div>
+        <div class="card"><h3>3. Collect payment</h3><p>If the contract says final payment comes before launch or file transfer, do not soften it into “whenever works.” Say the rule plainly.</p></div>
+        <div class="card"><h3>4. Package the handoff</h3><p>Send one packet with links, account ownership, editing notes, recurring costs, support window, and next steps.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste closeout checklist</h2>
+      <div class="checklist">
+        <p><strong>Before final approval</strong></p>
+        <ul>
+          <li>[ ] Homepage, core pages, navigation, footer, and contact information reviewed</li>
+          <li>[ ] Mobile/tablet/desktop views checked on the important pages</li>
+          <li>[ ] Contact forms, booking links, checkout links, newsletter forms, and important CTAs tested</li>
+          <li>[ ] Legal pages, privacy links, cookie/banner notes, and footer details checked or assigned to client/legal owner</li>
+          <li>[ ] Analytics, pixels, Search Console, redirects, and launch-critical integrations confirmed or listed as exclusions</li>
+        </ul>
+        <p><strong>Before launch / transfer</strong></p>
+        <ul>
+          <li>[ ] Written launch approval received</li>
+          <li>[ ] Final invoice sent and payment rule stated clearly</li>
+          <li>[ ] Domain, hosting, CMS, plugin, font, stock, and third-party account ownership documented</li>
+          <li>[ ] Admin accounts and password-sharing method confirmed</li>
+          <li>[ ] Known issues, deferred requests, or phase-two items listed in writing</li>
+        </ul>
+        <p><strong>During handoff</strong></p>
+        <ul>
+          <li>[ ] Client handoff packet sent as one organized message or document</li>
+          <li>[ ] Included support window and bug definition explained</li>
+          <li>[ ] New-request boundary explained: extra content, design changes, pages, integrations, strategy, or ongoing edits</li>
+          <li>[ ] Maintenance plan or hourly support option offered</li>
+          <li>[ ] 30-day check-in or testimonial request scheduled</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Short closeout email</h2>
+      <div class="template">Subject: Closing out [Website Name]
+
+Hey [Name],
+
+I’m wrapping up the closeout packet for [Website Name]. Before I mark the project complete, I’m checking three things:
+
+1. Final approval is confirmed.
+2. Final invoice / launch requirement is handled.
+3. The handoff packet includes the links, access notes, support window, and next steps you’ll need.
+
+Once those are done, I’ll send the final handoff packet in one place so nothing gets buried across email threads.
+
+Quick note: the included support window covers launch bugs from the agreed scope. New content, design changes, extra pages, third-party setup, or ongoing edits can go through a maintenance plan or a new quote.
+
+Thanks,
+[Your Name]</div>
+    </section>
+
+    <section class="card">
+      <h2>Want the organized version?</h2>
+      <p>The Website Handoff Kit includes the closeout guide, launch QA checklist, client handoff packet, access inventory CSV, email scripts, support-boundary copy, and maintenance offer language.</p>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_project_closeout_checklist">Download the Website Handoff Kit</a><span class="subnote">Use code <strong>LAUNCH10</strong> while it is available.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
