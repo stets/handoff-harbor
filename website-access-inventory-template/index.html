@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Access Inventory Template for Client Handoffs</title>
+  <meta name="description" content="Website access inventory template for freelance web designers: domains, hosting, CMS, analytics, plugins, DNS, licenses, renewal owners, and safe handoff notes.">
+  <meta property="og:title" content="Website Access Inventory Template">
+  <meta property="og:description" content="A practical access inventory for handing off website projects without losing track of domains, logins, subscriptions, and renewal owners.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website Access Inventory Template","description":"A practical website access inventory template for freelance web designers handing off client projects.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-access-inventory-template/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-handoff-checklist/">Checklist</a> · <a href="/handoff-harbor/client-handoff-packet-template/">Handoff packet</a> · <a href="/handoff-harbor/website-support-policy-template/">Support policy</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Access inventory for website handoffs</span>
+        <h1>Website access inventory template</h1>
+        <p>Most handoff messes are not design problems. They are ownership problems: nobody knows who controls the domain, which card pays for plugins, where DNS lives, or what happens when a license renews.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_access_inventory_template">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Use this before you transfer or close the project</h2>
+      <p>A clean access inventory does not mean emailing passwords around. It means naming every account, owner, renewal, billing responsibility, and safe password-sharing method before the project goes quiet.</p>
+      <p>If a client comes back six months later asking who owns something, this document should answer it without archaeology.</p>
+    </section>
+
+    <section>
+      <h2>What to track</h2>
+      <div class="grid">
+        <div class="card"><h3>Domains and DNS</h3><p>Registrar, DNS host, nameservers, important records, renewal date, billing owner, and who has admin access.</p></div>
+        <div class="card"><h3>Hosting and CMS</h3><p>Hosting provider, CMS admin URL, account owner, backup location, staging URL, and emergency contact path.</p></div>
+        <div class="card"><h3>Tools and integrations</h3><p>Analytics, forms, email marketing, booking, payments, maps, chat widgets, search, pixels, and API keys.</p></div>
+        <div class="card"><h3>Licenses and renewals</h3><p>Themes, plugins, fonts, stock assets, subscriptions, renewal dates, support terms, and who pays next.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste access inventory</h2>
+      <div class="template">Account / service: [Domain registrar / hosting / CMS / plugin / analytics]
+Purpose: [What this account controls]
+Login URL: [URL only — do not paste passwords here]
+Account owner: [Client / designer / third party]
+Admin users: [Names/emails]
+Billing owner: [Who pays]
+Renewal date: [Date]
+Plan/license: [Plan name or license note]
+Password sharing method: [1Password / Bitwarden / client vault / invite sent]
+Recovery email / phone: [Owner-controlled recovery path]
+Important notes: [DNS records, plugin dependency, cancellation warning, support contact]
+Handoff status: [Transferred / client invited / needs client action / excluded]</div>
+    </section>
+
+    <section class="card">
+      <h2>Quick checklist</h2>
+      <div class="checklist">
+        <ul>
+          <li>[ ] Domain registrar and DNS host identified</li>
+          <li>[ ] Hosting/CMS owner and billing responsibility confirmed</li>
+          <li>[ ] Admin users reviewed and unnecessary accounts removed</li>
+          <li>[ ] Plugin/theme/font/stock licenses documented</li>
+          <li>[ ] Analytics, forms, email, booking, and payment integrations listed</li>
+          <li>[ ] Passwords shared through a vault or account invitation, not plain email</li>
+          <li>[ ] Renewal dates and cancellation risks called out in the handoff packet</li>
+          <li>[ ] Anything intentionally excluded is written down so it does not become surprise free support</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Want the organized version?</h2>
+      <p>The Website Handoff Kit includes an account access inventory CSV, launch QA checklist, client handoff packet, email scripts, support-boundary copy, and maintenance offer language.</p>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_access_inventory_template">Download the Website Handoff Kit</a><span class="subnote">Use code <strong>LAUNCH10</strong> while it is available.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
