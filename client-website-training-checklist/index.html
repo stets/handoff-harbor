@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client Website Training Checklist for Web Designers</title>
+  <meta name="description" content="Client website training checklist for freelance web designers: what to teach after launch, what to record, what to document, and how to avoid endless unpaid support.">
+  <meta property="og:title" content="Client Website Training Checklist">
+  <meta property="og:description" content="A practical training agenda for web designers handing a finished website to a client.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Client Website Training Checklist","description":"A practical client website training checklist for freelance web designers handing off a finished site.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/client-website-training-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-handoff-checklist/">Checklist</a> · <a href="/handoff-harbor/client-handoff-packet-template/">Handoff packet</a> · <a href="/handoff-harbor/website-support-policy-template/">Support policy</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Client training checklist</span>
+        <h1>Client website training checklist</h1>
+        <p>Client training should not become a wandering screen-share where you answer every possible CMS question. Give the client the handful of tasks they actually need, record the session, document the limits, and point ongoing help toward paid support.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=client_website_training_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Training is part of the handoff, not forever support</h2>
+      <p>A clean training session gives the client confidence without turning you into their unpaid help desk. The trick is to teach the recurring tasks, skip edge-case rabbit holes, and write down where the handoff ends.</p>
+      <p>Use this checklist before your final call or include it inside the client handoff packet.</p>
+    </section>
+
+    <section>
+      <h2>What to cover in the training call</h2>
+      <div class="grid">
+        <div class="card"><h3>Login and roles</h3><p>Show the correct login URL, explain user roles, confirm who owns admin access, and remove temporary contractor accounts after handoff.</p></div>
+        <div class="card"><h3>Editing routine content</h3><p>Teach only the tasks the client will repeat: editing pages, posts, events, menu labels, images, team profiles, or product/service blurbs.</p></div>
+        <div class="card"><h3>Forms and lead flow</h3><p>Show where form submissions go, how notifications work, what to do if a form stops delivering, and who owns the connected inbox or CRM.</p></div>
+        <div class="card"><h3>Boundaries and next steps</h3><p>Explain what is included in the warranty period, what counts as a new request, and how maintenance or hourly support is handled after launch.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste training agenda</h2>
+      <div class="template">Client website training agenda
+
+Goal: show the client how to handle normal website updates without reopening the project.
+
+1. Access check
+- Confirm the client can log in
+- Confirm admin/editor roles
+- Confirm recovery email and account owner
+
+2. Content updates
+- Edit a normal page or post
+- Replace an image safely
+- Update navigation only if needed
+- Preview and publish changes
+
+3. Forms and important integrations
+- Send a test form submission
+- Confirm notification recipient
+- Show where submissions are stored
+- Note any third-party tools with separate billing or support
+
+4. What not to touch
+- Theme/plugin/code settings
+- DNS, hosting, payment, automation, or tracking settings unless documented
+- Design/system sections that can break layouts
+
+5. Support boundaries
+- Review warranty window
+- Explain what counts as a bug fix vs. a new request
+- Share maintenance/support options
+
+Recording link: [paste link]
+Documentation link: [paste handoff packet]
+Follow-up contact: [email/portal]</div>
+    </section>
+
+    <section class="card">
+      <h2>Quick checklist</h2>
+      <div class="checklist">
+        <ul>
+          <li>[ ] Training call has a written agenda</li>
+          <li>[ ] Session is recorded and linked in the handoff packet</li>
+          <li>[ ] Client can log in with their own account</li>
+          <li>[ ] Client knows how to make the 3-5 updates they actually need</li>
+          <li>[ ] Client knows what not to edit</li>
+          <li>[ ] Form/contact flow has been tested during or before training</li>
+          <li>[ ] Warranty/support boundary is explained before the call ends</li>
+          <li>[ ] Paid maintenance or support option is presented as the next step</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Want the full handoff system?</h2>
+      <p>The Website Handoff Kit includes the client handoff packet, launch QA checklist, account access inventory, email scripts, support-boundary copy, warranty language, and maintenance offer wording so training is one clean step in a finished handoff.</p>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=client_website_training_checklist">Download the Website Handoff Kit</a><span class="subnote">Use code <strong>LAUNCH10</strong> while it is available.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
