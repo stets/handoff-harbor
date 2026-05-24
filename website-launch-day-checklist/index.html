@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Launch Day Checklist for Freelance Web Designers</title>
+  <meta name="description" content="Copy/paste website launch day checklist for freelance web designers: DNS, SSL, redirects, forms, tracking, backups, client approval, handoff packet, and post-launch support boundaries.">
+  <link rel="canonical" href="https://stets.github.io/handoff-harbor/website-launch-day-checklist/">
+  <meta property="og:title" content="Website Launch Day Checklist">
+  <meta property="og:description" content="A practical launch-day checklist for getting a client website live without losing the handoff thread.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website Launch Day Checklist for Freelance Web Designers","description":"A practical website launch day checklist for freelance web designers.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-launch-day-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-pre-launch-qa-checklist/">Pre-launch QA</a> · <a href="/handoff-harbor/client-content-handoff-checklist/">Content handoff</a> · <a href="/handoff-harbor/client-handoff-packet-template/">Handoff packet</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Launch-day checklist</span>
+        <h1>Website launch day checklist</h1>
+        <p>Launch day is where small loose ends get expensive. Use this checklist to move from final approval to live site, verify the important pieces, and tee up the client handoff without turning launch into an unpaid support week.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_launch_day_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Do not hand off a site until launch has actually been checked.</h2>
+      <p>A site can look approved in staging and still fail after DNS flips, redirects change, plugins update, forms send to the wrong address, or analytics never starts collecting. Launch day needs its own checklist.</p>
+      <p>This sits between your pre-launch QA pass and the final handoff packet: make it live, verify the critical paths, then tell the client exactly what changed and what happens next.</p>
+    </section>
+
+    <section>
+      <h2>What to verify on launch day</h2>
+      <div class="grid">
+        <div class="card"><h3>Go-live basics</h3><p>DNS, SSL, canonical domain, hosting environment, CMS settings, cache/CDN, backups, admin users, and rollback notes.</p></div>
+        <div class="card"><h3>Critical paths</h3><p>Forms, booking links, payment links, newsletter signup, phone/email links, navigation, search, and any high-value CTA.</p></div>
+        <div class="card"><h3>SEO and tracking</h3><p>Redirects, sitemap, robots, analytics, event tracking, Search Console, metadata, social preview, and noindex checks.</p></div>
+        <div class="card"><h3>Client handoff</h3><p>Final approval, live URL, handoff packet, access inventory, warranty/support window, maintenance offer, and first post-launch follow-up.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste website launch day checklist</h2>
+      <div class="template">Website launch day checklist
+
+Project / website:
+Client owner:
+Launch date:
+Launch lead:
+Rollback contact:
+
+1. Final pre-launch confirmation
+[ ] Client gave written final approval
+[ ] Final invoice/payment step is clear
+[ ] Launch time confirmed with client
+[ ] Backup/export exists before changes
+[ ] Rollback plan documented
+[ ] No known launch blockers remain
+
+2. Go-live technical checks
+[ ] DNS points to correct host
+[ ] SSL certificate works
+[ ] Preferred domain redirects correctly
+[ ] HTTP redirects to HTTPS
+[ ] www/non-www behavior is correct
+[ ] CMS/site visibility is public
+[ ] Cache/CDN cleared after launch
+[ ] Admin users and permissions are correct
+
+3. Page and path verification
+[ ] Homepage loads on live domain
+[ ] Main navigation works
+[ ] Footer links work
+[ ] Key service/product pages load
+[ ] Contact page loads
+[ ] Forms submit and notify the right inbox
+[ ] Booking/payment links work
+[ ] Phone/email links work on mobile
+
+4. SEO, redirects, and tracking
+[ ] Page titles/meta descriptions are present
+[ ] Canonical URLs use the live domain
+[ ] Sitemap is live
+[ ] Robots.txt is not blocking the site
+[ ] Important old URLs redirect correctly
+[ ] Analytics is collecting traffic
+[ ] Search Console/domain verification is ready
+[ ] Social preview image/title look right
+
+5. Handoff and support boundary
+[ ] Live URL sent to client
+[ ] Handoff packet prepared
+[ ] Account/access inventory updated
+[ ] Recurring costs documented
+[ ] Warranty/support window defined
+[ ] Post-launch changes separated from launch fixes
+[ ] Maintenance/care plan offer ready if relevant
+[ ] 30-day follow-up reminder scheduled</div>
+    </section>
+
+    <section class="card">
+      <h2>Short launch-day update email</h2>
+      <div class="template">Subject: Your website is live
+
+Hey [Client Name],
+
+The website is live here:
+[Live URL]
+
+I’ve completed the launch-day checks for the main pages, forms, redirects, SSL, tracking, and key links. I’m also packaging the final handoff notes so you have the important links, account details, support window, and next steps in one place.
+
+If you spot anything that looks broken from launch, send it over and I’ll review it under the launch support window. Any new requests or extra content changes after approval can go into a separate post-launch update list.
+
+I’ll send the full handoff packet next.
+
+Thanks,
+[Your Name]</div>
+    </section>
+
+    <section class="card">
+      <h2>Quick setup notes</h2>
+      <div class="checklist"><ul>
+        <li>☐ Keep launch-day bugs separate from post-approval feature/content requests.</li>
+        <li>☐ Verify the live domain, not just staging or a preview URL.</li>
+        <li>☐ Test the client’s money paths first: forms, booking, checkout, phone, and email.</li>
+        <li>☐ Send a launch update before the handoff packet so the client knows what has been checked.</li>
+        <li>☐ Put access, recurring costs, and support boundaries into the final handoff packet.</li>
+      </ul></div>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_launch_day_checklist">Download the Website Handoff Kit</a><span class="subnote">Includes the handoff guide, trackers, packet template, email scripts, and support-boundary copy.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
