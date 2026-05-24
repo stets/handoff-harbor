@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Pre-Launch QA Checklist for Web Designers</title>
+  <meta name="description" content="Copy/paste website pre-launch QA checklist for freelance web designers: mobile, forms, SEO, analytics, redirects, accessibility, speed, DNS, backups, and client approval.">
+  <link rel="canonical" href="https://stets.github.io/handoff-harbor/website-pre-launch-qa-checklist/">
+  <meta property="og:title" content="Website Pre-Launch QA Checklist">
+  <meta property="og:description" content="A practical QA checklist to run before handing a client website over.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    code { color:#07111f; background:#dbeafe; border-radius:6px; padding:2px 5px; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website Pre-Launch QA Checklist for Web Designers","description":"A practical pre-launch website QA checklist for freelance web designers.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-pre-launch-qa-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-handoff-checklist/">Handoff checklist</a> · <a href="/handoff-harbor/client-content-handoff-checklist/">Content handoff</a> · <a href="/handoff-harbor/client-handoff-packet-template/">Handoff packet</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Pre-launch QA checklist</span>
+        <h1>Website pre-launch QA checklist</h1>
+        <p>A clean handoff starts before the client sees the final packet. Run this QA pass to catch broken forms, mobile issues, missing redirects, tracking gaps, DNS risks, and approval loose ends before launch day.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_pre_launch_qa_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Do the boring check before the handoff call.</h2>
+      <p>Clients remember the launch if the contact form breaks, the old URLs 404, or the mobile header covers half the screen. A simple pre-launch QA checklist protects the project margin and makes the final handoff feel professional.</p>
+      <p>Use this before sending the final invoice, approval form, handoff packet, or 30-day support window details.</p>
+    </section>
+
+    <section>
+      <h2>What to check before launch</h2>
+      <div class="grid">
+        <div class="card"><h3>Device and browser pass</h3><p>Home, key service pages, forms, navigation, menus, sticky elements, modals, and footers on desktop, tablet, and mobile.</p></div>
+        <div class="card"><h3>Forms and conversion paths</h3><p>Contact forms, booking links, checkout links, newsletter forms, thank-you pages, notifications, spam protection, and required fields.</p></div>
+        <div class="card"><h3>SEO and tracking</h3><p>Titles, meta descriptions, canonical URLs, redirects, sitemap, robots, analytics, Search Console, event tracking, and social preview tags.</p></div>
+        <div class="card"><h3>Ownership and recovery</h3><p>Admin users, backups, DNS access, hosting access, licenses, plugin updates, domain renewals, and who owns each recurring account.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste website pre-launch QA checklist</h2>
+      <div class="template">Website pre-launch QA checklist
+
+Project / website:
+Client owner:
+Launch target date:
+QA reviewer:
+
+1. Pages and content
+[ ] Homepage reviewed
+[ ] Main navigation reviewed
+[ ] Footer reviewed
+[ ] Service / product pages reviewed
+[ ] About / team page reviewed
+[ ] Contact page reviewed
+[ ] Legal pages present where required
+[ ] No placeholder copy remains
+[ ] No placeholder images remain
+[ ] Spelling and grammar pass complete
+
+2. Mobile and browser QA
+[ ] Mobile header/menu works
+[ ] Tablet layout works
+[ ] Desktop layout works
+[ ] Buttons and links are tappable
+[ ] Images are not distorted
+[ ] Popups/modals do not block key actions
+[ ] Tested in Chrome / Safari / Firefox as needed
+
+3. Forms and conversion paths
+[ ] Contact form submits successfully
+[ ] Client receives notification email
+[ ] User sees a confirmation message or thank-you page
+[ ] Booking links work
+[ ] Checkout or payment links work
+[ ] Newsletter / lead magnet form works
+[ ] Spam protection is enabled if needed
+[ ] All CTA buttons point to the right destination
+
+4. SEO and tracking
+[ ] Page titles are set
+[ ] Meta descriptions are set
+[ ] Canonical URLs are correct
+[ ] Open Graph/social preview works
+[ ] Sitemap exists and is submitted or ready
+[ ] Robots.txt is not blocking the site by mistake
+[ ] Old URLs have redirects mapped
+[ ] Analytics is installed
+[ ] Search Console/domain verification is ready
+
+5. Launch safety
+[ ] DNS access confirmed
+[ ] Hosting access confirmed
+[ ] CMS/admin access confirmed
+[ ] Backup exists before launch
+[ ] SSL certificate works
+[ ] Admin users are correct
+[ ] Plugin/license ownership documented
+[ ] Recurring costs documented
+
+6. Client approval
+[ ] Client reviewed staging/final URL
+[ ] Final content changes are complete
+[ ] Known post-launch requests are separated from launch blockers
+[ ] Final invoice/payment step is clear
+[ ] Support/warranty window is defined
+[ ] Handoff packet is ready to send</div>
+    </section>
+
+    <section class="card">
+      <h2>Short email to send before QA</h2>
+      <div class="template">Subject: Final QA pass before launch
+
+Hey [Client Name],
+
+I’m running the final QA pass now so we can launch cleanly and avoid loose ends after handoff.
+
+I’m checking the key pages, mobile layout, forms, tracking, redirects, access, backups, and the final approval items.
+
+If you have any final content corrections, please send them in one place by [date/time]. Anything new after final approval may need to go into a separate post-launch request so we can keep launch moving.
+
+Once QA is done, I’ll send the final handoff packet with links, access notes, support window details, and next steps.
+
+Thanks,
+[Your Name]</div>
+    </section>
+
+    <section class="card">
+      <h2>Quick setup notes</h2>
+      <div class="checklist"><ul>
+        <li>☐ Run QA before the client handoff meeting, not during it.</li>
+        <li>☐ Keep bugs, content changes, and new-scope requests in separate lists.</li>
+        <li>☐ Screenshot anything that needs client approval or a future paid change.</li>
+        <li>☐ Move DNS, hosting, analytics, and account ownership notes into the handoff packet.</li>
+        <li>☐ Define the support window before the client starts sending “quick tweaks.”</li>
+      </ul></div>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_pre_launch_qa_checklist">Download the Website Handoff Kit</a><span class="subnote">Includes the handoff guide, trackers, packet template, email scripts, and support-boundary copy.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
