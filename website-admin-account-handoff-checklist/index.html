@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Admin Account Handoff Checklist for Freelance Web Designers</title>
+  <meta name="description" content="Copy/paste website admin account handoff checklist for freelance web designers: owner accounts, roles, 2FA, recovery email, contractor cleanup, and secure access transfer.">
+  <link rel="canonical" href="https://stets.github.io/handoff-harbor/website-admin-account-handoff-checklist/">
+  <meta property="og:title" content="Website Admin Account Handoff Checklist">
+  <meta property="og:description" content="A practical checklist for transferring website admin access without emailing passwords or leaving contractor accounts behind.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website Admin Account Handoff Checklist for Freelance Web Designers","description":"A practical admin account handoff checklist for freelance web designers closing client website projects.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-admin-account-handoff-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-access-inventory-template/">Access inventory</a> · <a href="/handoff-harbor/website-domain-transfer-checklist/">Domain transfer</a> · <a href="/handoff-harbor/website-backup-handoff-checklist/">Backup handoff</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Admin account handoff checklist</span>
+        <h1>Website admin account handoff checklist</h1>
+        <p>Do not close a client website project with your personal admin account, a shared login, or forgotten contractor access still floating around. Use this checklist to transfer control cleanly without sending passwords in plain email.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_admin_account_handoff_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Access handoff is where messy projects stay messy.</h2>
+      <p>A client can approve the design and pay the invoice while the actual ownership is still unclear. The admin account might be tied to your email, the client might not have recovery access, old collaborators might still be active, and nobody knows who owns 2FA.</p>
+      <p>The fix is not to dump passwords into a PDF. The fix is to create named accounts, assign roles, transfer recovery methods, remove temporary users, and document where access is managed.</p>
+    </section>
+
+    <section>
+      <h2>What to confirm before final handoff</h2>
+      <div class="grid">
+        <div class="card"><h3>Owner account</h3><p>The client has at least one owner/admin account under their email, not your agency email or a generic shared inbox you control.</p></div>
+        <div class="card"><h3>Recovery and 2FA</h3><p>Recovery email, phone, authenticator, backup codes, and billing contact point to the client or their chosen operator.</p></div>
+        <div class="card"><h3>Role cleanup</h3><p>Temporary developer, staging, VA, copywriter, plugin vendor, and test accounts are removed or downgraded.</p></div>
+        <div class="card"><h3>Secure transfer</h3><p>Passwords are shared through a password manager, account invite, or reset flow — not pasted into a handoff email.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste website admin account handoff checklist</h2>
+      <div class="checklist"><ul>
+        <li>☐ Create or confirm a named client owner/admin account.</li>
+        <li>☐ Confirm the client can log in without using your email, phone, or authenticator.</li>
+        <li>☐ Move recovery email, phone, backup codes, and security questions to the client where applicable.</li>
+        <li>☐ Enable 2FA for owner/admin accounts and document who owns the second factor.</li>
+        <li>☐ Remove temporary contractor, test, staging, and old employee accounts.</li>
+        <li>☐ Downgrade your own account to the minimum access needed for the warranty window or care plan.</li>
+        <li>☐ Confirm billing owner and renewal notifications for hosting, domain, CMS, plugins, forms, email, and analytics.</li>
+        <li>☐ Store access notes in the client handoff packet without raw passwords.</li>
+        <li>☐ Tell the client exactly how to request access help after launch and whether that help is paid support.</li>
+        <li>☐ Save a dated screenshot/export of the final user list for your project archive.</li>
+      </ul></div>
+    </section>
+
+    <section class="card">
+      <h2>Admin access handoff note</h2>
+      <div class="template">Admin access status
+
+Platform/CMS: [WordPress / Webflow / Shopify / Squarespace / custom / other]
+Login URL: [URL]
+Client owner account: [name/email]
+Recovery email/phone owner: [client/team]
+2FA owner: [client/team]
+Billing owner: [client/team]
+Backup admin: [name/email or none]
+Designer/agency access after handoff: [removed / downgraded / kept for warranty / kept for care plan]
+
+Temporary accounts removed:
+- [developer]
+- [copywriter]
+- [testing]
+- [old vendor]
+
+Password transfer method:
+[password manager invite / reset link / client-created password / not applicable]
+
+Support boundary:
+After launch, access recovery help is [included through date] / [covered by care plan] / [billed separately]. Please keep your owner account and recovery method current.</div>
+    </section>
+
+    <section class="card">
+      <h2>Do this before you send the “we’re done” email</h2>
+      <div class="checklist"><ul>
+        <li>☐ Log out and have the client confirm they can log in from their own account.</li>
+        <li>☐ Check the final user list for old admins and forgotten vendor accounts.</li>
+        <li>☐ Confirm the client knows where to update their password and 2FA.</li>
+        <li>☐ Tie access help to your warranty or care-plan terms so it does not become endless free support.</li>
+      </ul></div>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_admin_account_handoff_checklist">Download the Website Handoff Kit</a><span class="subnote">Includes the handoff guide, access inventory, QA checklist, client packet, email scripts, and support-boundary copy.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
