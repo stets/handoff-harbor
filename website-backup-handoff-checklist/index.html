@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Backup Handoff Checklist for Freelance Web Designers</title>
+  <meta name="description" content="Copy/paste website backup handoff checklist for freelance web designers: backup owner, restore access, hosting snapshots, WordPress backups, test restores, and client handoff notes.">
+  <link rel="canonical" href="https://stets.github.io/handoff-harbor/website-backup-handoff-checklist/">
+  <meta property="og:title" content="Website Backup Handoff Checklist">
+  <meta property="og:description" content="A practical checklist for handing off website backups and restore ownership before client projects close.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website Backup Handoff Checklist for Freelance Web Designers","description":"A practical backup handoff checklist for freelance web designers closing client website projects.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-backup-handoff-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-access-inventory-template/">Access inventory</a> · <a href="/handoff-harbor/website-domain-transfer-checklist/">Domain transfer</a> · <a href="/handoff-harbor/website-launch-day-checklist/">Launch day</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Backup handoff checklist</span>
+        <h1>Website backup handoff checklist</h1>
+        <p>A client site is not really handed off until somebody owns backups and knows how to restore them. Use this checklist before final payment, maintenance handoff, or the “we’re done” email.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_backup_handoff_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Backups are boring until the client needs one.</h2>
+      <p>The risky version of handoff is “your host takes backups somewhere, probably.” The cleaner version documents where backups live, who can access them, how often they run, what they include, how long they are retained, and who is responsible if the site breaks after launch.</p>
+      <p>This is especially important for WordPress, Shopify theme work, Webflow exports, custom forms, membership sites, and anything with client-owned content or transactions.</p>
+    </section>
+
+    <section>
+      <h2>What to document before closeout</h2>
+      <div class="grid">
+        <div class="card"><h3>Backup source</h3><p>List whether backups come from hosting snapshots, a WordPress plugin, Webflow export, database dump, Git repo, or manual file archive.</p></div>
+        <div class="card"><h3>Restore owner</h3><p>Name who is responsible for restoring the site after handoff: client, host, maintenance provider, or you under a paid care plan.</p></div>
+        <div class="card"><h3>Retention window</h3><p>Capture backup frequency, retention length, storage location, and whether offsite backups exist.</p></div>
+        <div class="card"><h3>Restore proof</h3><p>Run or confirm at least one restore path before claiming the client is protected.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste website backup handoff checklist</h2>
+      <div class="checklist"><ul>
+        <li>☐ Identify the primary backup method: host snapshot, plugin, export, repo, database dump, or manual archive.</li>
+        <li>☐ Confirm what the backup includes: files, uploads, database, theme, plugins, forms, products, orders, members, and custom code.</li>
+        <li>☐ Confirm backup schedule and retention window.</li>
+        <li>☐ Confirm storage location and who has access.</li>
+        <li>☐ Save emergency restore contact details for the host or maintenance provider.</li>
+        <li>☐ Test or verify a restore path before final handoff.</li>
+        <li>☐ Document anything backups do not cover, such as email, DNS, third-party app settings, paid plugin licenses, or external automations.</li>
+        <li>☐ Put renewal costs, plugin licenses, hosting plan, and backup tool billing in the handoff packet.</li>
+        <li>☐ Explain who handles restores after launch and what counts as paid support.</li>
+        <li>☐ Send the backup note before final payment or maintenance plan decision.</li>
+      </ul></div>
+    </section>
+
+    <section class="card">
+      <h2>Client backup handoff note</h2>
+      <div class="template">Backup method: [hosting snapshots / WordPress plugin / Webflow export / manual archive / other]
+Backup frequency: [daily / weekly / manual]
+Retention window: [7 days / 30 days / other]
+Storage location: [hosting dashboard / cloud folder / plugin storage / repo]
+Restore access: [who can restore the site]
+Emergency contact: [host support URL / maintenance provider / internal owner]
+Last restore test: [date or not tested]
+
+What the backup includes:
+- [site files]
+- [database/content]
+- [uploads/media]
+- [theme/custom code]
+- [forms/products/orders/members if relevant]
+
+What the backup does not include:
+- [email/DNS/third-party apps/licenses/automations]
+
+After handoff, [client/company] is responsible for maintaining backups unless a paid care plan is active. Restore help after launch is [included/not included] and will be handled as [support terms].</div>
+    </section>
+
+    <section class="card">
+      <h2>Quick restore questions to answer</h2>
+      <div class="checklist"><ul>
+        <li>☐ If the site breaks tomorrow, who logs in first?</li>
+        <li>☐ Can the client access the host or backup dashboard?</li>
+        <li>☐ Is there a backup from before launch changes?</li>
+        <li>☐ Are database and media files both covered?</li>
+        <li>☐ Are paid licenses and plugin updates still active?</li>
+        <li>☐ Is restore work covered by the project, a warranty window, or a paid maintenance plan?</li>
+      </ul></div>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_backup_handoff_checklist">Download the Website Handoff Kit</a><span class="subnote">Includes the handoff guide, access inventory, QA checklist, client packet, email scripts, and support-boundary copy.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
