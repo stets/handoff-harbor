@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Analytics Handoff Checklist for Freelance Web Designers</title>
+  <meta name="description" content="Copy/paste website analytics handoff checklist for freelance web designers: GA4, Search Console, Tag Manager, pixels, conversions, ownership, access, reports, and support boundaries.">
+  <link rel="canonical" href="https://stets.github.io/handoff-harbor/website-analytics-handoff-checklist/">
+  <meta property="og:title" content="Website Analytics Handoff Checklist">
+  <meta property="og:description" content="A practical analytics handoff checklist so clients know who owns GA4, Search Console, tags, pixels, reports, and conversion tracking after launch.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website Analytics Handoff Checklist for Freelance Web Designers","description":"A practical analytics handoff checklist for freelance web designers closing client website projects.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-analytics-handoff-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-dns-records-handoff-checklist/">DNS records handoff</a> · <a href="/handoff-harbor/website-hosting-handoff-checklist/">Hosting handoff</a> · <a href="/handoff-harbor/website-client-signoff-form-template/">Client signoff</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Analytics handoff checklist</span>
+        <h1>Website analytics handoff checklist</h1>
+        <p>Analytics is easy to forget during launch because the site still “works” without it. Then the client asks why traffic, leads, ads, or Search Console data disappeared. Use this checklist to hand over ownership, access, tracking IDs, conversion events, reports, and support boundaries before the project closes.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_analytics_handoff_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Tracking ownership needs to be boringly explicit.</h2>
+      <p>Clients often assume analytics is “included” because a designer added a GA4 tag, a Meta pixel, or a contact-form conversion during the build. But if the property lives under the wrong Google account, nobody has admin access, or conversions were never tested, the launch handoff is incomplete.</p>
+      <p>The handoff record should say what is installed, who owns it, who can change it, what events are tracked, what is untracked, and whether analytics support is included after launch.</p>
+    </section>
+
+    <section>
+      <h2>What to confirm before closing the project</h2>
+      <div class="grid">
+        <div class="card"><h3>Account ownership</h3><p>Confirm GA4, Search Console, Tag Manager, ad pixels, heatmaps, and dashboard accounts are owned by the client or transferred cleanly.</p></div>
+        <div class="card"><h3>Installed tags</h3><p>Document tracking IDs, tag locations, consent/banner dependencies, form events, thank-you pages, and any third-party scripts.</p></div>
+        <div class="card"><h3>Conversion proof</h3><p>Test the important actions: form submit, booking click, phone/email click, checkout, newsletter signup, or quote request.</p></div>
+        <div class="card"><h3>Support boundary</h3><p>Define whether analytics setup, reporting, broken tags, ad-platform pixels, consent updates, or event changes are included or billable.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste website analytics handoff checklist</h2>
+      <div class="checklist"><ul>
+        <li>☐ GA4 property, measurement ID, owner account, and admin users are documented.</li>
+        <li>☐ Google Search Console property is verified and the client has owner/admin access.</li>
+        <li>☐ Google Tag Manager container ID and publish access are documented if GTM is used.</li>
+        <li>☐ Meta/LinkedIn/TikTok/Google Ads pixels are listed, or marked not installed.</li>
+        <li>☐ Cookie consent or privacy-banner dependency is documented where relevant.</li>
+        <li>☐ Form submissions, booking links, phone/email clicks, purchases, or other key events are tested.</li>
+        <li>☐ Thank-you pages, redirect URLs, and UTM expectations are noted.</li>
+        <li>☐ Client knows where to view reports and what numbers are meaningful after launch.</li>
+        <li>☐ Any untracked items are listed so the client does not assume they are included.</li>
+        <li>☐ Post-launch analytics changes are tied to the warranty window, care plan, or billable support process.</li>
+      </ul></div>
+    </section>
+
+    <section class="card">
+      <h2>Analytics handoff record</h2>
+      <div class="template">Website analytics handoff record
+
+Website: [client URL]
+GA4 property name: [property]
+GA4 measurement ID: [G-XXXX]
+GA4 owner/admin: [client / designer / agency / email]
+Search Console property: [URL or domain property]
+Search Console owner/admin: [email]
+Tag Manager container: [GTM-XXXX / not used]
+Pixels/ad tags installed: [Meta / LinkedIn / Google Ads / none]
+Consent banner dependency: [yes / no / tool]
+Key events tested: [forms / booking / phone / email / checkout / newsletter]
+Report/dashboard location: [GA4 / Looker Studio / client dashboard / none]
+Known untracked actions: [list]
+Last test date: [date]
+
+Support boundary:
+Analytics setup, report interpretation, ad pixels, new conversion events, broken third-party tags, and consent/tracking changes are [included until date] / [covered under care plan] / [billable support].</div>
+    </section>
+
+    <section class="card">
+      <h2>Send this line with the handoff packet</h2>
+      <div class="template">Analytics and tracking details are documented in the handoff packet so you know what is installed, who owns each account, which conversions were tested, and what is not included. Any analytics changes after the support window or outside an active care plan will be quoted before work starts.</div>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_analytics_handoff_checklist">Download the Website Handoff Kit</a><span class="subnote">Includes the handoff guide, QA checklist, access inventory, client packet, email scripts, and support-boundary copy.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
