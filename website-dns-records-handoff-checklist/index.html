@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website DNS Records Handoff Checklist for Freelance Web Designers</title>
+  <meta name="description" content="Copy/paste DNS records handoff checklist for freelance web designers: A, CNAME, MX, TXT, SPF, DKIM, DMARC, verification records, TTLs, nameservers, screenshots, and support boundaries.">
+  <link rel="canonical" href="https://stets.github.io/handoff-harbor/website-dns-records-handoff-checklist/">
+  <meta property="og:title" content="Website DNS Records Handoff Checklist">
+  <meta property="og:description" content="A practical DNS handoff checklist so clients do not lose email, SSL, forms, or ownership context after launch.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website DNS Records Handoff Checklist for Freelance Web Designers","description":"A practical DNS records handoff checklist for freelance web designers closing client website projects.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-dns-records-handoff-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-domain-transfer-checklist/">Domain transfer</a> · <a href="/handoff-harbor/website-hosting-handoff-checklist/">Hosting handoff</a> · <a href="/handoff-harbor/website-access-inventory-template/">Access inventory</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">DNS records handoff checklist</span>
+        <h1>Website DNS records handoff checklist</h1>
+        <p>DNS handoff is where a clean website launch can quietly turn into broken email, failed SSL, missing analytics verification, or a client who has no idea which records matter. Use this checklist before you call the project closed.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_dns_records_handoff_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>DNS is not just a technical footnote.</h2>
+      <p>The client does not need a networking lecture, but they do need a record of what keeps the site and email alive. A good handoff names the DNS host, exports the zone, labels what each record does, and makes future changes safer.</p>
+      <p>This is especially useful when a domain, hosting account, email provider, CDN, analytics tool, form provider, or verification record is owned by a different account.</p>
+    </section>
+
+    <section>
+      <h2>What to document</h2>
+      <div class="grid">
+        <div class="card"><h3>Nameservers and DNS host</h3><p>Record whether DNS lives at Cloudflare, the registrar, the web host, Webflow, Squarespace, Netlify, Vercel, or another provider.</p></div>
+        <div class="card"><h3>Website records</h3><p>Label the A, AAAA, and CNAME records that point the root domain, www domain, staging URLs, and redirects.</p></div>
+        <div class="card"><h3>Email records</h3><p>Copy MX, SPF, DKIM, DMARC, autodiscover, and any third-party mail routing records before launch changes.</p></div>
+        <div class="card"><h3>Verification records</h3><p>Save TXT/CNAME records for Google Search Console, analytics, payments, email platforms, SSL, CDN, and other services.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste DNS records handoff checklist</h2>
+      <div class="checklist"><ul>
+        <li>☐ Confirm the active nameservers and current DNS host.</li>
+        <li>☐ Export the DNS zone or screenshot every record before making final changes.</li>
+        <li>☐ Label A/AAAA/CNAME records for root, www, staging, CDN, redirects, and app subdomains.</li>
+        <li>☐ Copy MX, SPF, DKIM, DMARC, autodiscover, and mail routing records.</li>
+        <li>☐ Copy Google, analytics, payment, SSL, CDN, and platform verification TXT/CNAME records.</li>
+        <li>☐ Note TTL values for records that may need quick launch-day changes.</li>
+        <li>☐ Confirm who owns DNS access and who can approve future DNS changes.</li>
+        <li>☐ Test site loading, SSL, email delivery, forms, checkout, analytics, and redirects after changes.</li>
+        <li>☐ Add the DNS host, key records, and support boundary to the client handoff packet.</li>
+        <li>☐ Tell the client not to delete unknown TXT/CNAME records without checking what they verify.</li>
+      </ul></div>
+    </section>
+
+    <section class="card">
+      <h2>DNS handoff record template</h2>
+      <div class="template">DNS handoff record
+
+Website/domain: [example.com]
+Registrar: [provider]
+DNS host / nameservers: [provider / nameserver values]
+DNS account owner: [client / designer / agency / host]
+Who can approve changes: [name / role]
+
+Core website records:
+- Root domain: [A/AAAA/CNAME value]
+- www: [CNAME value]
+- Staging/dev: [record or none]
+- CDN/proxy: [Cloudflare / other / none]
+
+Email records:
+- MX: [values]
+- SPF: [value]
+- DKIM: [selector/value or location]
+- DMARC: [value]
+- Other mail records: [autodiscover / smtp / verification]
+
+Verification records:
+- Search Console: [record]
+- Analytics/tag manager: [record]
+- Payment/forms/email tools: [records]
+- SSL/CDN/platform records: [records]
+
+Support boundary:
+Future DNS edits, email troubleshooting, migrations, provider support calls, and broken third-party verification records are [included until date] / [covered by care plan] / [billable support].</div>
+    </section>
+
+    <section class="card">
+      <h2>Client-safe explanation</h2>
+      <div class="template">I included a DNS record in the handoff packet so future website/email changes are safer. Please do not delete DNS records you do not recognize without checking first — some of them verify email, analytics, SSL, search tools, payment tools, or the website itself. If you want me to review DNS changes after the included support window, I can quote that separately or include it in a care plan.</div>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_dns_records_handoff_checklist">Download the Website Handoff Kit</a><span class="subnote">Includes the handoff guide, QA checklist, access inventory, client packet, email scripts, and support-boundary copy.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
