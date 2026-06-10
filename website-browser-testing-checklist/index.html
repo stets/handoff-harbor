@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Browser Testing Checklist for Freelance Web Designers</title>
+  <meta name="description" content="Copy/paste website browser testing checklist for freelance web designers: desktop, mobile, Safari, Chrome, Firefox, forms, checkout, layouts, accessibility, and client signoff.">
+  <link rel="canonical" href="https://stets.github.io/handoff-harbor/website-browser-testing-checklist/">
+  <meta property="og:title" content="Website Browser Testing Checklist">
+  <meta property="og:description" content="A practical cross-browser and device testing checklist to run before handing off a client website.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website Browser Testing Checklist for Freelance Web Designers","description":"A practical browser and device testing checklist for freelance web designers closing client website projects.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-browser-testing-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-pre-launch-qa-checklist/">Pre-launch QA</a> · <a href="/handoff-harbor/website-launch-day-checklist/">Launch day</a> · <a href="/handoff-harbor/website-client-signoff-form-template/">Client signoff</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Browser testing checklist</span>
+        <h1>Website browser testing checklist</h1>
+        <p>A client will forgive a small typo faster than a broken mobile menu, Safari layout glitch, dead form, or checkout that fails after launch. Run this browser and device pass before handoff so QA problems do not turn into unpaid launch-week support.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_browser_testing_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Browser testing is not the same as “it worked on my laptop.”</h2>
+      <p>Most handoff drama comes from obvious things nobody checked on the right device: sticky headers covering forms, hero text wrapping badly, buttons too close on mobile, Safari image issues, cookie banners hiding CTAs, or confirmation emails not arriving.</p>
+      <p>The handoff should show what was tested, where it passed, what devices/browsers were skipped, and which future browser bugs are covered by the launch support window versus billable changes.</p>
+    </section>
+
+    <section>
+      <h2>What to test before client signoff</h2>
+      <div class="grid">
+        <div class="card"><h3>Core pages</h3><p>Home, service/product pages, pricing, about, contact, policy pages, landing pages, and any campaign URLs the client will share after launch.</p></div>
+        <div class="card"><h3>Devices and browsers</h3><p>At minimum: Chrome desktop, Safari desktop or iOS Safari, Firefox desktop, a narrow mobile viewport, and one real phone when possible.</p></div>
+        <div class="card"><h3>Revenue actions</h3><p>Forms, booking links, checkout buttons, newsletter signup, payment embeds, quote requests, tracking events, confirmation pages, and notification emails.</p></div>
+        <div class="card"><h3>Handoff notes</h3><p>Record known issues, client-approved compromises, unsupported browsers, screenshots, test dates, and the support boundary for future fixes.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste browser testing checklist</h2>
+      <div class="checklist"><ul>
+        <li>☐ Home page, key service/product pages, contact page, and launch URLs load without console-visible breakage or missing assets.</li>
+        <li>☐ Header, navigation, footer, CTAs, forms, embeds, and popups work in Chrome desktop.</li>
+        <li>☐ Same key flow checked in Safari or iOS Safari, especially sticky sections, images, forms, and checkout/booking embeds.</li>
+        <li>☐ Firefox desktop checked for layout, form, and interactive-section issues.</li>
+        <li>☐ Mobile menu, tap targets, hero sections, forms, pricing tables, galleries, and accordions checked on a narrow viewport.</li>
+        <li>☐ At least one real phone test completed if the site depends on mobile leads or booking.</li>
+        <li>☐ Form submission, confirmation message, destination inbox/CRM, and notification email tested after final DNS/hosting setup.</li>
+        <li>☐ Booking, checkout, payment, donation, or lead-magnet flow tested far enough to prove the client-owned account receives the action.</li>
+        <li>☐ Accessibility basics checked: visible focus states, readable contrast, image alt text, labels for important form fields, and no keyboard traps.</li>
+        <li>☐ Known browser quirks, skipped tests, client-approved tradeoffs, and post-launch support boundaries are listed in the handoff packet.</li>
+      </ul></div>
+    </section>
+
+    <section class="card">
+      <h2>Browser test record template</h2>
+      <div class="template">Website browser test record
+
+Website: [client URL]
+Test date: [date]
+Tester: [name]
+Browsers/devices checked:
+- Chrome desktop: [pass / issue]
+- Safari desktop or iOS Safari: [pass / issue]
+- Firefox desktop: [pass / issue]
+- Mobile viewport: [pass / issue]
+- Real phone: [device + pass / issue]
+
+Critical flows tested:
+- Contact/quote form: [result]
+- Booking/checkout/payment: [result]
+- Newsletter/CRM signup: [result]
+- Analytics/conversion event: [result]
+
+Known issues or skipped tests:
+- [issue / reason / owner]
+
+Support boundary:
+- Included fixes until: [date]
+- Billable after: [date or condition]
+- Unsupported browsers/devices: [list]</div>
+    </section>
+
+    <section class="card">
+      <h2>Send this line with the handoff packet</h2>
+      <div class="template">I completed a browser and device QA pass across the main pages and critical flows. Known browser issues, skipped tests, and client-approved tradeoffs are listed in the handoff notes. Fixes for launch-blocking bugs found during the support window are included; future browser/device issues outside that scope are handled through the care plan or quoted billable support.</div>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_browser_testing_checklist">Download the Website Handoff Kit</a><span class="subnote">Includes QA checklist, client handoff packet, access inventory, email scripts, and support-boundary copy.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
