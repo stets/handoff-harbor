@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Performance Handoff Checklist for Freelance Web Designers</title>
+  <meta name="description" content="Copy/paste website performance handoff checklist for freelance web designers: Core Web Vitals, image sizes, hosting, caching, plugins, mobile speed, testing evidence, and support boundaries.">
+  <link rel="canonical" href="https://stets.github.io/handoff-harbor/website-performance-handoff-checklist/">
+  <meta property="og:title" content="Website Performance Handoff Checklist">
+  <meta property="og:description" content="A practical speed and performance handoff checklist to run before closing a client website project.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website Performance Handoff Checklist for Freelance Web Designers","description":"A practical speed and performance handoff checklist for freelance web designers closing client website projects.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-performance-handoff-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-pre-launch-qa-checklist/">Pre-launch QA</a> · <a href="/handoff-harbor/website-browser-testing-checklist/">Browser testing</a> · <a href="/handoff-harbor/website-seo-handoff-checklist/">SEO handoff</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Performance handoff checklist</span>
+        <h1>Website performance handoff checklist</h1>
+        <p>A fast site at launch can get slow six weeks later when the client uploads giant images, installs plugins, changes hosting, or adds third-party scripts. Document the performance baseline before final signoff so speed issues do not turn into unpaid support.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_performance_handoff_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Performance handoff protects both sides.</h2>
+      <p>Clients remember “the website feels slow,” not whether the issue came from a 12MB hero image, a cheap host, a new chat widget, or thirty uncompressed gallery uploads after launch.</p>
+      <p>A simple performance record gives you a clean baseline: what was tested, what passed, what depends on client behavior, and what becomes paid optimization later.</p>
+    </section>
+
+    <section>
+      <h2>What to check before final signoff</h2>
+      <div class="grid">
+        <div class="card"><h3>Baseline speed tests</h3><p>Run at least one mobile and desktop test with PageSpeed Insights, Lighthouse, WebPageTest, or your preferred tool. Save the date, URLs, scores, and major warnings.</p></div>
+        <div class="card"><h3>Images and media</h3><p>Confirm hero images, galleries, logos, background videos, and uploaded assets are compressed, sized correctly, lazy-loaded where appropriate, and documented for the client.</p></div>
+        <div class="card"><h3>Hosting and caching</h3><p>Record the host, CDN, cache plugin/settings, SSL status, DNS notes, renewal owner, and any limitations that could affect load time after launch.</p></div>
+        <div class="card"><h3>Third-party scripts</h3><p>List analytics, pixels, booking embeds, chat widgets, reviews, maps, forms, and marketing scripts so future slowdowns have an obvious place to start.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste performance handoff checklist</h2>
+      <div class="checklist"><ul>
+        <li>☐ Home page and at least 2-3 priority pages were tested on mobile and desktop.</li>
+        <li>☐ Test date, tool, scores, URLs, and major warnings are saved in the handoff packet.</li>
+        <li>☐ Large images, galleries, logos, and background media were compressed and checked.</li>
+        <li>☐ Lazy loading, responsive image sizing, font loading, and obvious render-blocking issues were reviewed.</li>
+        <li>☐ Hosting, CDN, caching, SSL, DNS, and plugin/app dependencies are documented.</li>
+        <li>☐ Third-party scripts and embeds are listed with owner, purpose, and removal risk.</li>
+        <li>☐ Mobile page layout was checked on real devices or a documented browser/device matrix.</li>
+        <li>☐ Client knows that future uploads, plugins, scripts, and hosting changes can affect speed.</li>
+        <li>☐ Known performance limits are written down instead of hidden in a Slack thread.</li>
+        <li>☐ Post-launch optimization is scoped as a care-plan item or separate paid work.</li>
+      </ul></div>
+    </section>
+
+    <section class="card">
+      <h2>Performance baseline record template</h2>
+      <div class="template">Website performance handoff record
+
+Website: [client URL]
+Launch date: [date]
+Prepared by: [name]
+
+Pages tested:
+- [URL] — mobile score/notes: [score + issues]
+- [URL] — desktop score/notes: [score + issues]
+- [URL] — mobile/desktop notes: [score + issues]
+
+Media checks:
+- Hero images: [compressed / needs client follow-up]
+- Gallery images: [compressed / client-owned]
+- Video/background media: [notes]
+
+Hosting/caching:
+- Host/CDN: [provider]
+- Cache layer/plugin: [name/settings]
+- SSL/DNS owner: [client / agency / other]
+
+Third-party scripts:
+- Analytics/pixels: [tools]
+- Forms/booking/chat/maps/reviews: [tools]
+
+Known limits:
+- [cheap hosting, heavy app, client-owned image library, required scripts, etc.]
+
+Support boundary:
+- Launch-blocking speed bugs included until: [date]
+- Future performance optimization is: [care plan / quoted separately]</div>
+    </section>
+
+    <section class="card">
+      <h2>Send this with the final handoff</h2>
+      <div class="template">I included a performance handoff record with the launch packet: tested pages, mobile/desktop notes, media checks, hosting/cache details, third-party scripts, and known limits. Launch-blocking performance issues inside the support window are included; future optimization caused by new content, plugins, scripts, hosting changes, or ongoing speed work is handled through the care plan or quoted separately.</div>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_performance_handoff_checklist">Download the Website Handoff Kit</a><span class="subnote">Includes QA checklist, client handoff packet, access inventory, email scripts, and support-boundary copy.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
