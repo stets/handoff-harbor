@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Accessibility Handoff Checklist for Freelance Web Designers</title>
+  <meta name="description" content="Copy/paste website accessibility handoff checklist for freelance web designers: headings, alt text, forms, keyboard checks, contrast, focus states, known limits, and support boundaries.">
+  <link rel="canonical" href="https://stets.github.io/handoff-harbor/website-accessibility-handoff-checklist/">
+  <meta property="og:title" content="Website Accessibility Handoff Checklist">
+  <meta property="og:description" content="A practical accessibility handoff checklist to run before closing a client website project.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://stets.github.io/handoff-harbor/assets/website-handoff-kit-preview.png">
+  <style>
+    :root { --bg:#07111f; --card:#0d1b2d; --ink:#f5f7fb; --muted:#b6c2d3; --accent:#50e3a4; --accent2:#7dd3fc; --line:#20334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:radial-gradient(circle at top left,#16395b 0,#07111f 42%); color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 64px; }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; color:var(--muted); margin-bottom:54px; }
+    .brand { font-weight:850; color:var(--ink); text-decoration:none; }
+    .pill { display:inline-flex; border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:7px 11px; background:rgba(80,227,164,.08); font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,72px); line-height:.94; margin:18px 0; letter-spacing:-.055em; }
+    h2 { font-size:30px; line-height:1.08; letter-spacing:-.035em; margin:0 0 14px; }
+    h3 { margin:24px 0 8px; }
+    p, li { color:var(--muted); font-size:18px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+    .card { border:1px solid var(--line); background:rgba(13,27,45,.8); border-radius:24px; padding:24px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .preview { width:100%; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 70px rgba(0,0,0,.28); }
+    .button { display:inline-flex; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#04111d; text-decoration:none; font-weight:850; padding:14px 18px; border-radius:14px; box-shadow:0 18px 40px rgba(80,227,164,.22); }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:26px; }
+    .subnote { color:var(--muted); font-size:14px; }
+    section { margin-top:56px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .template { white-space:pre-wrap; background:#f8fafc; color:#102033; border-radius:18px; padding:22px; font:15px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; overflow:auto; }
+    .checklist { background:#f8fafc; color:#102033; border-radius:18px; padding:22px; }
+    .checklist p, .checklist li { color:#102033; font-size:16px; }
+    .checklist ul { list-style:none; padding-left:0; }
+    .checklist li { margin:8px 0; }
+    footer { margin-top:70px; color:#7f8da3; font-size:14px; }
+    @media (max-width:850px) { .hero,.grid { grid-template-columns:1fr; } nav { align-items:flex-start; flex-direction:column; } }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Website Accessibility Handoff Checklist for Freelance Web Designers","description":"A practical accessibility handoff checklist for freelance web designers closing client website projects.","publisher":{"@type":"Organization","name":"Handoff Harbor"},"mainEntityOfPage":"https://stets.github.io/handoff-harbor/website-accessibility-handoff-checklist/"}</script>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="/handoff-harbor/">Handoff Harbor</a><div><a href="/handoff-harbor/website-pre-launch-qa-checklist/">Pre-launch QA</a> · <a href="/handoff-harbor/website-browser-testing-checklist/">Browser testing</a> · <a href="/handoff-harbor/website-performance-handoff-checklist/">Performance</a></div></nav>
+
+    <main class="hero">
+      <div>
+        <span class="pill">Accessibility handoff checklist</span>
+        <h1>Website accessibility handoff checklist</h1>
+        <p>Accessibility is not something to hand-wave during launch week. Run a basic accessibility pass, record the known limits, and tell the client what is included after launch before every future issue becomes unpaid emergency support.</p>
+        <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_accessibility_handoff_checklist">Get the full Website Handoff Kit</a><span class="subnote">$29 launch price. Code LAUNCH10 saves $10.</span></div>
+      </div>
+      <div><img class="preview" src="/handoff-harbor/assets/website-handoff-kit-preview.png" alt="Preview pages from The Website Handoff Kit"></div>
+    </main>
+
+    <section class="card">
+      <h2>Accessibility handoff keeps the conversation honest.</h2>
+      <p>Most freelance projects do not include a full WCAG audit, legal review, remediation retainer, and assistive-technology testing. That is fine — if the client understands what was checked, what was not checked, and what future accessibility work costs.</p>
+      <p>This page is not legal advice or a compliance guarantee. It is a practical closeout checklist for designers who want to catch obvious issues and document scope clearly.</p>
+    </section>
+
+    <section>
+      <h2>What to check before final signoff</h2>
+      <div class="grid">
+        <div class="card"><h3>Structure and headings</h3><p>Confirm pages use one clear H1, sensible heading order, descriptive page titles, useful link text, and content that still makes sense without the visual layout.</p></div>
+        <div class="card"><h3>Images and media</h3><p>Add useful alt text for meaningful images, hide decorative images from screen readers where appropriate, and document any client-owned images that still need better descriptions.</p></div>
+        <div class="card"><h3>Forms and interactive elements</h3><p>Check labels, required fields, error messages, buttons, menus, accordions, popups, and embeds so the most important conversion paths are usable.</p></div>
+        <div class="card"><h3>Keyboard, contrast, and focus</h3><p>Tab through key pages, watch the focus state, test menus/modals, review color contrast, and record any third-party widget limits outside your control.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Copy/paste accessibility handoff checklist</h2>
+      <div class="checklist"><ul>
+        <li>☐ Priority pages have clear titles, one main H1, and logical heading order.</li>
+        <li>☐ Navigation links, buttons, and CTA text are descriptive without relying only on surrounding copy.</li>
+        <li>☐ Meaningful images have useful alt text; decorative images are handled appropriately.</li>
+        <li>☐ Color contrast has been checked for body text, buttons, labels, and important UI states.</li>
+        <li>☐ Forms have visible labels, required-field notes, error states, success states, and correct destinations.</li>
+        <li>☐ Main pages and critical flows can be navigated with a keyboard.</li>
+        <li>☐ Focus states are visible on links, buttons, menus, and form fields.</li>
+        <li>☐ Popups, cookie banners, chat widgets, booking embeds, maps, and other third-party tools are listed with known limits.</li>
+        <li>☐ Video/audio content has captions, transcript notes, or a documented client follow-up item.</li>
+        <li>☐ Accessibility scope is written into the final handoff so basic QA is not confused with a full compliance audit.</li>
+      </ul></div>
+    </section>
+
+    <section class="card">
+      <h2>Accessibility handoff record template</h2>
+      <div class="template">Website accessibility handoff record
+
+Website: [client URL]
+Launch date: [date]
+Prepared by: [name]
+
+Pages checked:
+- [URL] — notes: [headings / images / forms / keyboard / contrast]
+- [URL] — notes: [headings / images / forms / keyboard / contrast]
+- [URL] — notes: [headings / images / forms / keyboard / contrast]
+
+Checks completed:
+- Headings/page structure: [pass / notes]
+- Link and button text: [pass / notes]
+- Image alt text: [pass / client follow-up]
+- Form labels/errors/success: [pass / notes]
+- Keyboard navigation: [pass / notes]
+- Focus states: [pass / notes]
+- Color contrast: [pass / notes]
+- Third-party widgets/embeds: [listed / limitations]
+
+Known limits:
+- [No formal WCAG audit included, client-owned copy/images need review, third-party tool limitations, etc.]
+
+Support boundary:
+- Launch-blocking accessibility bugs included until: [date]
+- Formal audit/remediation or ongoing accessibility work is: [care plan / quoted separately]</div>
+    </section>
+
+    <section class="card">
+      <h2>Send this with the final handoff</h2>
+      <div class="template">I included an accessibility handoff record with the launch packet: pages checked, headings, alt text, forms, keyboard navigation, contrast notes, third-party widget limits, and known follow-up items. This covers the practical launch QA included in this project. A formal WCAG audit, legal compliance review, ongoing remediation, or accessibility work caused by future content/tool changes can be handled as a separate quote or care-plan item.</div>
+      <div class="cta"><a class="button" href="https://itsupportgroup.gumroad.com/l/website-handoff-kit?utm_source=handoff_harbor&utm_medium=seo_article&utm_campaign=website_accessibility_handoff_checklist">Download the Website Handoff Kit</a><span class="subnote">Includes QA checklist, client handoff packet, access inventory, email scripts, and support-boundary copy.</span></div>
+    </section>
+
+    <footer>Handoff Harbor is a pseudonymous template shop. Checkout and delivery are handled by Gumroad.</footer>
+  </div>
+</body>
+</html>
